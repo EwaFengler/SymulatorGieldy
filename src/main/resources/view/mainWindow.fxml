@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="852.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainWindowController">
+    <stylesheets>
+        <URL value="@stylesheet.css" />
+    </stylesheets>
+    <VBox prefHeight="400.0" prefWidth="721.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <StackPane prefHeight="150.0" prefWidth="200.0">
+            <fx:include fx:id="stockExchangePanel" source="stockExchangePanel.fxml" />
+            <fx:include fx:id="indexPanel" source="indexPanel.fxml" />
+        </StackPane>
+        <GridPane prefHeight="800.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <fx:include fx:id="stockExchangeList" source="stockExchangeList.fxml" GridPane.columnIndex="0" />
+            <fx:include fx:id="indexList" source="indexList.fxml" GridPane.columnIndex="1" />
+            <fx:include fx:id="companyList" source="companyList.fxml" GridPane.columnIndex="2" />
+            <fx:include fx:id="currencyList" source="currencyList.fxml" GridPane.columnIndex="3" />
+            <fx:include fx:id="feedstockList" source="feedstockList.fxml" GridPane.columnIndex="4" />
+            <fx:include fx:id="investorList" source="investorList.fxml" GridPane.columnIndex="5" />
+            <fx:include fx:id="fundList" source="fundList.fxml" GridPane.columnIndex="6" />
+            <AnchorPane GridPane.columnIndex="7">
+                <fx:include fx:id="assetList" source="assetList.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </AnchorPane>
+        </GridPane>
+        <HBox alignment="BOTTOM_LEFT">
+            <Button prefWidth="80" onAction="#serialize" mnemonicParsing="false" styleClass="economyButton" text="Zapisz">
+                <HBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="5.0" top="5.0"/>
+                </HBox.margin>
+            </Button>
+            <Button prefWidth="80" onAction="#deserialize" mnemonicParsing="false" styleClass="economyButton" text="Wczytaj">
+                <HBox.margin>
+                    <Insets bottom="10.0" left="5.0" right="5.0" top="5.0"/>
+                </HBox.margin>
+            </Button>
+        </HBox>
+    </VBox>
+</AnchorPane>

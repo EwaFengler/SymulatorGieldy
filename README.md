@@ -15,8 +15,8 @@ Umiejętności nabyte podczas realizacji projektu
 
 Przykładowe screenshoty
 ----------------
-![Layout](https://github.com/EwaFengler/SymulatorGieldy/tree/master/screenshoty/1.png)
+![Layout](https://github.com/EwaFengler/SymulatorGieldy/blob/master/screenshoty/1.png)
 
-![Layout](https://github.com/EwaFengler/SymulatorGieldy/tree/master/screenshoty/2.png)
+![Layout](https://github.com/EwaFengler/SymulatorGieldy/blob/master/screenshoty/2.png)
 
-![Layout](https://github.com/EwaFengler/SymulatorGieldy/tree/master/screenshoty/3.png)
+![Layout](https://github.com/EwaFengler/SymulatorGieldy/blob/master/screenshoty/3.png)
